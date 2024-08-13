@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!--Css-->
+  <link rel="stylesheet" href="style.css">
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <!--Container Sign Up-->
+  <div class="container-signup">
+    <div class="title">
+      <h2>Sign Up</h2>
+      <p>Free forever. No credit card needed.</p>
+    </div>
+    <!--Create account-->
+    <form action="/submit-form-signup">
+    <div class="box">
+      <label for="name">Your Name</label>
+      <input required  placeholder="Your Name" id="name" type="text">
+      <label for="email">Your E-mail</label>
+      <input required  placeholder="Your E-mail" id="email" type="email">
+      <label for="password">Password</label>
+      <input required  placeholder="At least 8 characters" id="password" type="password">
+    </div>
+    <!--Rules to create account-->
+    <div class="rules">
+      <input required type="checkbox" name="rules" id="rules">
+      <label for="rules">I agree to all the <a href="">Term, Privacy policy</a> and <a href="">Fees.</a></label>
+    </div>
+    <!--Button to submit data the creation-->
+    <div class="continue">
+      <button type="submit">Continue</button>
+    </div>
+    </form>
+
+    <!--Page for to do login-->
+    <div class="login">
+      <p>Have an account? <span onclick="login()">Log in</span></p>
+    </div>
+  </div>
+  <!--Container Log in-->
+  <div class="container-login">
+    <div class="title">
+      <h2>Log In</h2>
+      <p>Free forever. No credit card needed.</p>
+    </div>
+    <!--To do Login-->
+    <form action="/submit-form-login">
+    <div class="box">
+      <label for="email-login">Your E-mail</label>
+      <input required  placeholder="Your E-mail" id="email-login" type="email-login">
+      <label for="password-login">Password</label>
+      <input required  placeholder="At least 8 characters" id="password-login" type="password-login">
+    </div>
+    <!--Rules the login-->
+    <div class="rules">
+      <input required type="checkbox" name="rules-login" id="rules-login">
+      <label for="rules">I agree to all the <a href="">Term, Privacy policy</a> and <a href="">Fees.</a></label>
+    </div>
+    <!--Button for to do login-->
+    <div class="continue">
+      <button type="submit">Continue</button>
+    </div>
+    </form>
+    <!--Create an account now-->
+    <div class="login">
+      <p>Have an account? <span onclick="signup()">Sign Up</span></p>
+    </div>
+  </div>
+  <!--JavaScript-->
+  <script src="script.js"></script>
+</body>
+</html>
